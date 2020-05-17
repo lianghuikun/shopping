@@ -1,0 +1,28 @@
+server:
+  port: 2002
+spring:
+  application:
+    name: storage-service
+  cloud:
+    nacos:
+      discovery: # Nacos注册中心地址
+        server-addr: localhost:8848
+    alibaba:
+      seata:
+        tx-service-group: my_tx_group # 需要和seata/file.conf下配置的一致
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1/seata_order
+    username: root
+    password: mysql
+#    type: com.alibaba.druid.pool.DruidDataSource
+feign:
+  hystrix:
+    enabled: false
+
+logging:
+  level:
+    io:
+      seata: info
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
