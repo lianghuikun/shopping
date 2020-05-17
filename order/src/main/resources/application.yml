@@ -19,7 +19,6 @@ spring:
 feign:
   hystrix:
     enabled: false
-
 logging:
   level:
     io:

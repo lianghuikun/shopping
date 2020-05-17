@@ -14,7 +14,6 @@ public class OrderController {
 
     @Resource
     private OrderService orderService;
-
     @GetMapping("/order/create")
     public CommonResult create(Order order) {
         orderService.create(order);

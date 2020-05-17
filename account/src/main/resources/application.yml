@@ -12,7 +12,7 @@ spring:
         tx-service-group: shopping_tx_group # 需要和seata/file.conf下配置的一致
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1/seata_order
+    url: jdbc:mysql://127.0.0.1/seata_account
     username: root
     password: mysql
 #    type: com.alibaba.druid.pool.DruidDataSource
