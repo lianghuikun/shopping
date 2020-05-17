@@ -9,7 +9,7 @@ spring:
         server-addr: localhost:8848
     alibaba:
       seata:
-        tx-service-group: my_tx_group # 需要和seata/file.conf下配置的一致
+        tx-service-group: shopping_tx_group # 需要和seata/file.conf下配置的一致
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1/seata_order
